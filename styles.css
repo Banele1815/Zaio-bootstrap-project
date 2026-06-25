@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+
+section {
+  scroll-margin-top: 50px;
+  padding: 50px 0;
+}
+
+/* HERO */
+.banner-wrap main {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.banner-wrap {
+  position: relative;
+  background-image: url("./assets/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* NAV */
+.nav-menu {
+  background: black;
+}
+
+/* NAV LINKS */
+.nav-masthead .nav-link {
+  color: rgba(255,255,255,0.7);
+}
+
+.nav-masthead .nav-link.active {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+/* SECTION TITLE LABEL */
+.section-title {
+  display: inline-block;
+  background: #e9ecef;
+  padding: 6px 14px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* PROJECT IMAGES */
+.project-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+}
