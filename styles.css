@@ -3,6 +3,39 @@
   padding: 0;
   box-sizing: border-box;
 }
+/*Added Auto Dark Mode*/
+:root {
+  --bg-color: #f8f9fa;
+  --text-color: #000;
+  --card-color: #fff;
+  --accent: #0d6efd;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --card-color: #1e1e1e;
+    --accent: #4dabf7;
+  }
+}
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.card {
+  background: var(--card-color);
+  color: var(--text-color);
+}
+
+.nav-menu {
+  background: var(--bg-color);
+}
+
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+}
 
 html {
   scroll-behavior: smooth;
